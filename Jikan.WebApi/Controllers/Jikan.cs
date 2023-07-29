@@ -15,7 +15,7 @@ namespace Jikan.WebApi.Controllers
         }
 
         [HttpGet(Name = "GetAnime")]
-        public async Task<JikanResponse> Get(string q, int page)
+        public async Task<JikanResponse> Get(string q, int page = 1)
         {
             return await Interactor.GetSeriesByDescription(q, page);
         }
