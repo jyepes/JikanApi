@@ -26,8 +26,9 @@ namespace Jikan.WebApi.Domain
             {
                 if (item.score > 5)
                 {
-
+                    item.message = "Muy  buena";
                 }
+
             }
 
             return response;
